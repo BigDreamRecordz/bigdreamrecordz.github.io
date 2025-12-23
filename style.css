@@ -69,7 +69,7 @@ nav ul li a:hover {
     color: #000000; /* Black subtitle */
 }
 
-/* CONTACT BUTTON ON HERO */
+/* CONTACT BUTTON ON HERO & ARTISTS CTA */
 .contact-btn {
     display: inline-block;
     padding: 12px 25px;
@@ -223,3 +223,4 @@ footer {
     font-size: 1em;
     line-height: 1.4;
 }
+
