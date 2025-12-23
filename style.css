@@ -14,15 +14,21 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* logo left, nav right */
     align-items: center;
     padding: 20px 50px;
     background-color: #000000; /* Black header */
     border-bottom: 2px solid #8950f7; /* Purple accent line */
+    position: fixed;   /* Stays on top while scrolling */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
     width: 120px;
+    height: auto;
+    object-fit: contain;
 }
 
 nav ul {
@@ -47,7 +53,7 @@ nav ul li a:hover {
 
 #hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 140px 20px 100px 20px; /* Top padding for fixed header */
 }
 
 #hero h1 {
@@ -79,7 +85,7 @@ h2 {
 }
 
 .artist-card {
-    background-color: #121212; /* Slightly lighter black for contrast */
+    background-color: #121212; /* Slightly lighter black */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -108,7 +114,7 @@ form input, form textarea {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #8950f7; /* Purple outline */
-    background-color: #000000; /* Black background for inputs */
+    background-color: #000000; /* Black background */
     color: #ffffff; /* White text */
 }
 
@@ -129,7 +135,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #6e3ed0; /* Slightly darker purple on hover */
+    background-color: #6e3ed0; /* Darker purple hover */
 }
 
 footer {
@@ -138,4 +144,3 @@ footer {
     background-color: #000000; /* Black footer */
     border-top: 2px solid #8950f7; /* Purple top border */
 }
-
